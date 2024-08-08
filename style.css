@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors */
+
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --gray-700: hsl(0, 0%, 20%);
+  --gray-800: hsl(0, 0%, 12%);
+  --gray-900: hsl(0, 0%, 8%);
+
+  /* Fonts */
+  --paragraph: 14px;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: var(--paragraph);
+  background-color: var(--gray-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 384px;
+  background-color: var(--gray-800);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 12px;
+}
+header {
+  padding: 40px 40px 24px 40px;
+}
+.profileimage {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+header h1 {
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 500;
+  margin-top: 24px;
+  line-height: 150%;
+}
+header h2 {
+  font-size: 14px;
+  color: var(--green);
+  font-weight: bold;
+  line-height: 150%;
+  margin-top: 4px;
+}
+header p {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--white);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section a {
+  background-color: var(--gray-700);
+  width: 304px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+section a:last-child {
+  margin-bottom: 40px;
+}
+section a:hover {
+  background-color: var(--green);
+  color: var(--gray-700);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 327px;
+  }
+  section a {
+    background-color: var(--gray-700);
+    width: 279px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
